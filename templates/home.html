@@ -1,0 +1,18 @@
+{% extends "links_buttons.html" %}
+<!-- home.html has a explanation and a picture -->
+{% block title %}Home page{% endblock %}
+{% block content1 %}
+    <h2>Home page</h2>
+    <p>
+      Welcome {{account}} to my homepage. The website was built for my class Building Secure
+        Python Applications class with University of Maryland Global Campus. The
+        theme of the website is a mix of Hitchhikers Guide to the Galaxy and my two
+        "emotional support potatoes" or guinea pigs named Mellow and Byte. We also
+        threw in two homemade memes in. My roommate assisted me with the ideas for
+        the website, thank you Nicole!
+    </p>
+    <a href="https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy">The Hitchhikers Guide to the Galaxy</a>
+    <br>
+    <br>
+    <img src="{{url_for('static', filename='thehitchhikersguidetothegalaxy.jpg')}}"/>
+{% endblock %}

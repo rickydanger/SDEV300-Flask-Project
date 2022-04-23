@@ -1,0 +1,30 @@
+{% extends "links_buttons.html" %}
+<!-- memes.html has a two pictures and some explanations and a reference -->
+{% block title %}Memes{% endblock %}
+{% block content1 %}
+    <ol type="a">
+        <li>
+            <h2>No Cat Meme</h2>
+            <img src="{{url_for('static', filename='nocatmeme.jpg')}}" width="250" height="280"/>
+            <p>
+                When you ask your friend who has said no 72 times and is well
+                beyond irritated.<br>
+                <br>
+                It starts with a low level "nnn" sound like a hiss and rises up
+                because you are are about to get a paw to the face.
+            </p>
+        </li>
+          <li>
+              <h2>OMG Chicken Meme</h2>
+              <img src="{{url_for('static', filename='omgchickenmeme.jpg')}}" width="250" height="280"/>
+              <p>
+                When you nearly avoid a accident that took you by surprise<br>
+                <br>
+                Only the third amGAAAAAAAAAd! would be said, but I do love the idea of a omg
+                  chicken pecking at the ground to eat corn.
+            </p>
+          </li>
+    </ol>
+    <h4>Reference</h4>
+    <a href="https://imgflip.com/memetemplates">memetemplates</a>
+{% endblock %}

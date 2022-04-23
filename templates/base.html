@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- base.html is a template for each page on the website-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0px;
+                font-size: 120%;
+            }
+        </style>
+    </head>
+    <body>
+        <table cellpadding="0" cellspacing="0" width="100%" height="100%" style="border:solid 1px #000000">
+             <tr>
+                <td colspan = "2" bgcolor = "#7B9DCE">
+                   <h1><font face="Arial" size="20px" color="#CBCBCB">THE GUINEAS GUIDE TO THE GALAXY</font></h1>
+                </td>
+             </tr>
+             <tr valign = "top">
+                <td style="text-align:center;" bgcolor = "#aaa" width = "2">
+                    {% block links %}{% endblock %}
+                </td>
+
+                <td style="padding:40px" bgcolor = "#eee" width = "90%" height = "100%">
+                   {% block content1 %}{% endblock %}
+                </td>
+
+             </tr>
+             <tr>
+                <td colspan = "2" bgcolor = "#7B9DCE">
+                   <center>
+                       {% block footer %}
+                           {% if name %}
+                                <h5><font face="Arial" color="#CBCBCB"> {{ name }} (refresh page to update)</h5>
+                           {% endif %}
+                           <h5><font face="Arial" color="#CBCBCB">Copyright © 2021 Mellow and Byte</font></h5>
+                       {% endblock %}
+                   </center>
+                </td>
+             </tr>
+      </table>
+    </body>
+</html>

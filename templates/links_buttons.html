@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+<!-- base.html is a template for each page on the website-->
+{% block title %}{% endblock %}
+{% block links %}
+    <ul>
+        <li><a href="http://127.0.0.1:5000/home/">Home</a></li>
+        <br>
+        <li><a href="http://127.0.0.1:5000/guineasguidetothegalaxy/">Guineas Guide to the Galaxy</a></li>
+        <br>
+        <li><a href="http://127.0.0.1:5000/mellowandbyte/">Mellow and Byte</a></li>
+        <br>
+        <li><a href="http://127.0.0.1:5000/memes/">Memes</a></li>
+        <br>
+        <li><a href="http://127.0.0.1:5000/tables/">A Table of Tables</a></li>
+    </ul>
+    <button onclick="window.location.href='http://127.0.0.1:5000/reset/';">Reset Password</button>
+    <button onclick="window.location.href='http://127.0.0.1:5000/logout/';">Logout</button>
+{% endblock %}
+{% block content1 %}{% endblock %}

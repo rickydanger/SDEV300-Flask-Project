@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+<!-- login.html displays the login page and register button -->
+{% block title %}Login{% endblock %}
+{% block content1 %}
+    <h2>Login</h2>
+       <form method="post">
+            <table>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td><input name="username" id="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td> <input type="password" name="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td colspan='2'><input type="submit" value="Login"></td>
+                </tr>
+            </table>
+        </form>
+        <button onclick="window.location.href='http://127.0.0.1:5000/register/';">Register</button>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p style="color:red;">{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+{% endblock %}

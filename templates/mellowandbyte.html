@@ -1,0 +1,29 @@
+{% extends "links_buttons.html" %}
+<!-- mellowandbyte.html has two pictures and poem with the poems reference -->
+{% block title %}Mellow and Byte{% endblock %}
+{% block content1 %}
+    <h2>Mellow and Byte</h2>
+    <ol type="a">
+          <li>Mellow<br><img src="{{url_for('static', filename='mellow.jfif')}}" width="225" height="300"/></li>
+          <li>Byte<br><img src="{{url_for('static', filename='byte.jfif')}}" width="225" height="300"/></li>
+    </ol>
+
+    <p>
+        A faint whistle<br>
+        in the dark<br>
+        What's that?<br>
+        I listen hard.<br>
+        Sleepy sheet,<br>
+        soft charr.<br>
+        Tiny peep,<br>
+        teeny squeep.<br>
+        Mellow and Byte are telling me,<br>
+        Good night.<br>
+        Sleep tight,<br>
+        I whisper back.<br>
+        I hope<br>
+        they doesn't snore.<br>
+    </p>
+    <h4>Reference</h4>
+    <a href="https://www.guineapigcages.com/forum/threads/87772-Guinea-pig-poems!https://interestingliterature.com/2019/08/10-of-the-best-poems-about-space-and-the-planets/">87772-Guinea-pig-poems!</a>
+{% endblock %}

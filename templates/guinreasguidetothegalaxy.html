@@ -1,0 +1,27 @@
+{% extends "links_buttons.html" %}
+<!-- guinreasguidetothegalaxy.html has a picture and poem with the poems reference -->
+{% block title %}Guinea's Guide to the Galaxy{% endblock %}
+{% block content1 %}
+    <h2>Our Guinea Hero's</h2>
+    <img src="{{url_for('static', filename='guineasguidetothegalaxy.jpg')}}" />
+    <h3>Vogon Poetry</h3>
+    <p>
+        The night is come, but not too soon;<br>
+        And sinking silently,<br>
+        All silently, the little guinea's moon<br>
+        Drops down behind the sky.<br>
+        <br>
+        There is no light in guinea earth or guinea heaven<br>
+        But the cold light of stars;<br>
+        And the first watch of night is given<br>
+        To the red planet Mars.<br>
+        <br>
+        Is it the tender star of guinea love?<br>
+        The star of guinea love and guinea dreams?<br>
+        O no! from that blue tent above,<br>
+        A guinea's armor gleams …<br>
+    </p>
+
+    <h4>Reference</h4>
+    <a href="https://interestingliterature.com/2019/08/10-of-the-best-poems-about-space-and-the-planets/">10-of-the-best-poems-about-space-and-the-planets</a>
+{% endblock %}

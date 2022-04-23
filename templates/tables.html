@@ -1,0 +1,30 @@
+{% extends "links_buttons.html" %}
+<!-- tables.html has 4 rows and three columns of pictures in a table-->
+{% block title %}Tables{% endblock %}
+{% block content1 %}
+    <h2>A Table of Tables</h2>
+    <p>Below is a table of tables with four columns and three rows
+        which is a requirement for my course.</p>
+    <table>
+        <tr>
+            <td><img src="{{url_for('static', filename='guineatable7.jpg')}}" width="200" height="200"/></td>
+            <td><img src="{{url_for('static', filename='hgttgtable4.jpg')}}" width="200" height="200"/></td>
+            <td><img src="{{url_for('static', filename='guineatable2.jpg')}}" width="200" height="200"/></td>
+        </tr>
+        <tr>
+            <td><img src="{{url_for('static', filename='hgthgtabe1.jfif')}}" width="200" height="200"/></td>
+            <td><img src="{{url_for('static', filename='guineatable4.jfif')}}" width="200" height="200"/></td>
+            <td><img src="{{url_for('static', filename='guineatable6.jfif')}}" width="200" height="200"/></td>
+        </tr>
+        <tr>
+            <td><img src="{{url_for('static', filename='guineatable8.jpg')}}" width="200" height="200"/></td>
+            <td><img src="{{url_for('static', filename='guineatable1.jfif')}}" width="200" height="200"/></td>
+            <td><img src="{{url_for('static', filename='hgttgtable2.jpg')}}" width="200" height="200"/></td>
+        </tr>
+        <tr>
+            <td><img src="{{url_for('static', filename='hgttgtable3.jpg')}}" width="200" height="200"/></td>
+            <td><img src="{{url_for('static', filename='guineatable3.jfif')}}" width="200" height="200"/></td>
+            <td><img src="{{url_for('static', filename='guineatable5.jpg')}}" width="200" height="200"/></td>
+        </tr>
+    </table>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "links_buttons.html" %}
+<!-- reset.html displays the reset page -->
+{% block title %}Reset{% endblock %}
+{% block content1 %}
+    <h2>Password Reset</h2>
+    <p>
+        Account: {{account}}
+        <br>
+    </p>
+       <form method="post">
+            <table>
+                <tr>
+                    <td><label for="password">New Password</label></td>
+                    <td> <input type="password" name="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Confirm Password</label></td>
+                    <td> <input type="password" name="confirm_password" id="confirm_password" required></td>
+                </tr>
+                <tr>
+                    <td colspan='2'><input type="submit" value="Reset"></td>
+                </tr>
+            </table>
+        </form>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p style="color:red;">{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+{% endblock %}
